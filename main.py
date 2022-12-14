@@ -6,6 +6,7 @@ print("Please enter a stock ticker you are interested in")
 print("If you are done enter 1")
 
 #Essensial Needs
+link = "https://finance.yahoo.com/quote/%s"
 stockList = []
 
 while True:
@@ -19,6 +20,12 @@ while True:
         stockList.append(Stock)
 
 
+
+
+
+for stock in stockList:
+    site = link%stock
+    print(site)
 
 
 
